@@ -22,4 +22,9 @@ class Clientes
         $result = $this->database->executeSQL($sql);
         return array_shift($result);
     }
+
+    public function findAllProducts(){
+        $sql = "SELECT * FROM producto";
+        return $this->database->executeSQL($sql);
+    }
 }

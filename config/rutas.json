@@ -1,10 +1,19 @@
 {
+
   "/":{
+    "controller": "mainController",
+    "action":   "getmain"
+  },
+  "/Clientes":{
     "controller": "getClientsController",
     "action":   "getClients"
   },
   "/DatosCliente":{
     "controller":"getDataClientController",
     "action": "getData"
+  },
+  "/Productos":{
+    "controller":"getProductsController",
+    "action": "getProducts"
   }
 }

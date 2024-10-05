@@ -2,7 +2,7 @@
 
 namespace AEV1\views;
 
-class ListadoClientes
+class ListadoProductos
 {
     public function __construct(array $rows = null)
     {
@@ -12,11 +12,14 @@ class ListadoClientes
         } else {
             if (count($rows) > 0) {
 
-                echo "<h2>LISTADO CLIENTES</h2>";
+                echo "<h2>LISTADO PRODUCTOS</h2>";
                 echo "<table style='border: 1px solid black; border-collapse: collapse;'>";
 
                 foreach ($rows as $row) {
-                    echo "<tr><td style='border: 1px black solid'><a href='/DatosCliente/" . $row["CLIENTE_COD"] . "'>" . $row["NOMBRE"] . "</a></td></tr>";
+                    echo "<tr>";
+                    echo "<td style='border: 1px black solid'>" . $row["PROD_NUM"] . "</td>";
+                    echo "<td style='border: 1px black solid'>" . $row["DESCRIPCION"] . "</td>";
+                    echo "</tr>";
                 }
                 echo "</table><br>";
                 echo "<td><a href='/'>volver</a></td>";
