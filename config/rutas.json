@@ -1,10 +1,10 @@
 {
   "/":{
-    "controller": "MainController",
-    "action":   "main"
+    "controller": "getClientsController",
+    "action":   "getClients"
   },
   "/DatosCliente":{
-    "controller":"DetalleController",
-    "action": "detail"
+    "controller":"getDataClientController",
+    "action": "getData"
   }
 }

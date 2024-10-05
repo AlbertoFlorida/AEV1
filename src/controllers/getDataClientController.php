@@ -5,9 +5,9 @@ use AEV1\core\DataBase;
 use AEV1\models\Clientes;
 use AEV1\views\DatosCliente;
 
-class DetalleController
+class getDataClientController
 {
-        public function detail($clienteCod = null):void{
+        public function getData($clienteCod = null):void{
             if(is_null($clienteCod)){
                 $data = null;
             }else{

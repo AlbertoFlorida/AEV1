@@ -5,9 +5,9 @@ use AEV1\Core\DataBase;
 use AEV1\Models\Clientes;
 use AEV1\Views\ListadoClientes;
 
-class MainController
+class getClientsController
 {
-    public function main():void{
+    public function getClients():void{
 
         $tarea = new Clientes(new DataBase());
         new ListadoClientes($tarea->findAll());
