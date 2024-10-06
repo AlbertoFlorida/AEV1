@@ -9,7 +9,7 @@ class getClientsController
 {
     public function getClients():void{
 
-        $tarea = new Clientes(new DataBase());
-        new ListadoClientes($tarea->findAll());
+        $task = new Clientes(new DataBase());
+        new ListadoClientes($task->findAll());
     }
 }

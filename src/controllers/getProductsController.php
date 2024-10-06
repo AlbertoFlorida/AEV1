@@ -9,7 +9,7 @@ class getProductsController
 {
     public function getProducts():void{
 
-        $tarea = new Clientes(new DataBase());
-        new ListadoProductos($tarea->findAllProducts());
+        $task = new Clientes(new DataBase());
+        new ListadoProductos($task->findAllProducts());
     }
 }

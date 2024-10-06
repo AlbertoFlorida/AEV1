@@ -7,12 +7,13 @@ use AEV1\views\DatosCliente;
 
 class getDataClientController
 {
-        public function getData($clienteCod = null):void{
-            if(is_null($clienteCod)){
+        public function getData($nombre = null):void{
+
+            if(is_null($nombre)){
                 $data = null;
             }else{
-                $tarea = new Clientes(new DataBase());
-                $data = $tarea->findById($clienteCod);
+                $task = new Clientes(new DataBase());
+                $data = $task->findByName($nombre);
             }
             $view = new DatosCliente($data);
         }

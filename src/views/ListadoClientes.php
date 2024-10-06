@@ -16,7 +16,7 @@ class ListadoClientes
                 echo "<table style='border: 1px solid black; border-collapse: collapse;'>";
 
                 foreach ($rows as $row) {
-                    echo "<tr><td style='border: 1px black solid'><a href='/DatosCliente/" . $row["CLIENTE_COD"] . "'>" . $row["NOMBRE"] . "</a></td></tr>";
+                    echo "<tr><td style='border: 1px black solid'><a href='/Cliente/" . $row["CLIENTE_COD"] . "'>" . $row["NOMBRE"] . "</a></td></tr>";
                 }
                 echo "</table><br>";
                 echo "<p><a href='/'>MENU PRINCIPAL</a></p>";

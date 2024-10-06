@@ -5,13 +5,11 @@ use AEV1\views\Menu;
 
 
 
-
 class mainController
 {
     public function getMain(): void
     {
-        $menu = new Menu();
-        $menu->render();
+        $task = new Menu();
+        $task->render();
     }
-
 }

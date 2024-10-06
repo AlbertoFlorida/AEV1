@@ -22,9 +22,22 @@ class Clientes
         $result = $this->database->executeSQL($sql);
         return array_shift($result);
     }
+    public function findByName() {
+
+        $url = $_SERVER['REQUEST_URI'];
+        $name = str_replace('/DatosCliente/', '', $url);
+        $formattedName = str_replace('/', ' ', $name);
+
+        $sql = "SELECT * FROM cliente WHERE NOMBRE = '" . $formattedName . "'";
+        $result = $this->database->executeSQL($sql);
+
+        return array_shift($result);
+    }
 
     public function findAllProducts(){
         $sql = "SELECT * FROM producto";
         return $this->database->executeSQL($sql);
     }
+
+
 }
