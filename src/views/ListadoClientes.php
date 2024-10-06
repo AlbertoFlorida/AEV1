@@ -19,11 +19,11 @@ class ListadoClientes
                     echo "<tr><td style='border: 1px black solid'><a href='/DatosCliente/" . $row["CLIENTE_COD"] . "'>" . $row["NOMBRE"] . "</a></td></tr>";
                 }
                 echo "</table><br>";
-                echo "<td><a href='/'>volver</a></td>";
+                echo "<p><a href='/'>MENU PRINCIPAL</a></p>";
 
             } else {
                 echo "0 results";
-                echo "<p><a href='/'>volver</a></p>";
+                echo "<p><a href='/'>MENU PRINCIPAL</a></p>";
             }
         }
     }

@@ -24,7 +24,8 @@ class DatosCliente
                 echo "<tr><td>LIMITE_CREDITO</td><td>" . $row["LIMITE_CREDITO"] . "</td></tr>";
                 echo "<tr><td>OBSERVACIONES</td><td>" . $row["OBSERVACIONES"] . "</td></tr>";
                 echo "</table><br>";
-                echo "<td><a href='/'>volver</a></td>";
+                echo "<td><a href='/Clientes'>ATRÁS</a></td><br>";
+                echo "<td><a href='/'>MENU PRINCIPAL</a></td>";
 
             } else {
                 echo "0 results";

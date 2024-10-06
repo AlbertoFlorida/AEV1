@@ -17,12 +17,11 @@ class ListadoProductos
 
                 foreach ($rows as $row) {
                     echo "<tr>";
-                    echo "<td style='border: 1px black solid'>" . $row["PROD_NUM"] . "</td>";
                     echo "<td style='border: 1px black solid'>" . $row["DESCRIPCION"] . "</td>";
                     echo "</tr>";
                 }
                 echo "</table><br>";
-                echo "<td><a href='/'>volver</a></td>";
+                echo "<td><a href='/'>MENU PRINCIPAL</a></td>";
 
             } else {
                 echo "0 results";
