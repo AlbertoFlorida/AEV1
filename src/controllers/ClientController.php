@@ -5,7 +5,7 @@ use AEV1\core\DataBase;
 use AEV1\models\Clientes;
 use AEV1\views\MostrarCliente;
 
-class getClientController
+class ClientController
 {
     public function getClient($clienteCod = null):void{
         if(is_null($clienteCod)){

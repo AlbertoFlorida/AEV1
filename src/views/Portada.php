@@ -2,12 +2,11 @@
 
 namespace AEV1\views;
 
-class Main
+class Portada
 {
-    public function show(): void
+    public function showImage(): void
     {
         echo "<h1>MATERIAL DEPORTIVO MAGIVER</h1>";
-
 
         echo "<table style='border: 1px solid black; border-collapse: collapse;'>";
         echo "<tr>";

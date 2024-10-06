@@ -5,7 +5,7 @@ use AEV1\Core\DataBase;
 use AEV1\Models\Clientes;
 use AEV1\Views\ListadoClientes;
 
-class getClientsController
+class ClientsController
 {
     public function getClients():void{
 

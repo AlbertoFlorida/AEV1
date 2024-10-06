@@ -5,7 +5,7 @@ use AEV1\core\DataBase;
 use AEV1\models\Clientes;
 use AEV1\views\DatosCliente;
 
-class getDataClientController
+class DataClientController
 {
         public function getData($nombre = null):void{
 

@@ -4,7 +4,7 @@ namespace AEV1\views;
 
 class Menu
 {
-    public function render(): void
+    public function showMenu(): void
     {
         echo "<h2>MENU PRINCIPAL</h2>";
 

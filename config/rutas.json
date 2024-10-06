@@ -1,28 +1,27 @@
 {
 
   "/": {
-    "controller": "mainController",
+    "controller": "MainController",
     "action": "showMenu"
   },
-
   "/home": {
-    "controller": "menuController",
+    "controller": "MenuController",
     "action": "getMenu"
   },
   "/Clientes": {
-    "controller": "getClientsController",
+    "controller": "ClientsController",
     "action": "getClients"
   },
   "/Cliente": {
-    "controller": "getClientController",
+    "controller": "ClientController",
     "action": "getClient"
   },
   "/DatosCliente": {
-    "controller": "getDataClientController",
+    "controller": "DataClientController",
     "action": "getData"
   },
   "/Productos": {
-    "controller": "getProductsController",
+    "controller": "ProductsController",
     "action": "getProducts"
   }
 }

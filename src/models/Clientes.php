@@ -1,7 +1,6 @@
 <?php
 
 namespace AEV1\models;
-
 use AEV1\Core\Interfaces\IDataBase;
 
 class Clientes
@@ -22,6 +21,7 @@ class Clientes
         $result = $this->database->executeSQL($sql);
         return array_shift($result);
     }
+
     public function findByName() {
 
         $url = $_SERVER['REQUEST_URI'];
@@ -30,7 +30,6 @@ class Clientes
 
         $sql = "SELECT * FROM cliente WHERE NOMBRE = '" . $formattedName . "'";
         $result = $this->database->executeSQL($sql);
-
         return array_shift($result);
     }
 
