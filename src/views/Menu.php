@@ -14,6 +14,5 @@ class Menu
         echo "<td style='border: 1px solid black; padding: 8px;'><a href='/Productos' style='text-decoration: none; color: black;'>Productos</a></td>";
         echo "</tr>";
         echo "</table>";
-        echo "<img src='/images/padel.jpeg' alt='Descripción de la Imagen'>";
     }
 }

@@ -1,15 +1,13 @@
 <?php
 
 namespace AEV1\controllers;
-use AEV1\views\Menu;
-
-
+use AEV1\views\Main;
 
 class mainController
 {
-    public function getMain(): void
+    public function showMenu(): void
     {
-        $task = new Menu();
-        $task->render();
+        $task = new main();
+        $task->show();
     }
 }

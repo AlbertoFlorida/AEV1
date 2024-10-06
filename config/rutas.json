@@ -2,7 +2,12 @@
 
   "/": {
     "controller": "mainController",
-    "action": "getmain"
+    "action": "showMenu"
+  },
+
+  "/home": {
+    "controller": "menuController",
+    "action": "getMenu"
   },
   "/Clientes": {
     "controller": "getClientsController",
