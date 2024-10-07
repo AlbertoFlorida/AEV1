@@ -8,7 +8,7 @@ class MostrarCliente
     {
         if (is_null($row)) {
             echo "No se han recibido datos para mostrar en la vista del Listado";
-            echo "<p><a href='/home'>volver</a></p>";
+            echo "<p><a href='/'>volver</a></p>";
         } else {
             if (count($row) > 0) {
 
@@ -21,11 +21,11 @@ class MostrarCliente
 
                 echo "<td><a href='/DatosCliente/" . $formattedName. "'>MOSTRAR DATOS DE CLIENTE</a></td><br><br><br>";
                 echo "<td><a href='/Clientes'>ATRÁS</a></td><br><br>";
-                echo "<td><a href='/home'>MENU PRINCIPAL</a></td>";
+                echo "<td><a href='/'>MENU PRINCIPAL</a></td>";
 
             } else {
                 echo "0 results";
-                echo "<p><a href='/home'>volver</a></p>";
+                echo "<p><a href='/'>volver</a></p>";
             }
         }
     }

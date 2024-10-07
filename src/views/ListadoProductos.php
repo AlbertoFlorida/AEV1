@@ -8,7 +8,7 @@ class ListadoProductos
     {
         if (is_null($rows)) {
             echo "No se han recibido datos para mostrar en la vista de Detalle";
-            echo "<p><a href='/home'>volver</a></p>";
+            echo "<p><a href='/'>volver</a></p>";
         } else {
             if (count($rows) > 0) {
 
@@ -21,11 +21,11 @@ class ListadoProductos
                     echo "</tr>";
                 }
                 echo "</table><br>";
-                echo "<td><a href='/home'>MENU PRINCIPAL</a></td>";
+                echo "<td><a href='/'>MENU PRINCIPAL</a></td>";
 
             } else {
                 echo "0 results";
-                echo "<p><a href='/home'>volver</a></p>";
+                echo "<p><a href='/'>volver</a></p>";
             }
         }
     }

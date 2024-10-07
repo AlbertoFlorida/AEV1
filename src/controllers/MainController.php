@@ -1,13 +1,15 @@
 <?php
 
 namespace AEV1\controllers;
-use AEV1\views\Portada;
+use AEV1\views\MenuPrincipal;
+
+
 
 class MainController
 {
-    public function showMenu(): void
+    public function getMenu(): void
     {
-        $task = new Portada();
-        $task->showImage();
+        $task = new MenuPrincipal();
+        $task->showMenu();
     }
 }
